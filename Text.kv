@@ -1,0 +1,50 @@
+<Photoselection>:
+    padding:10
+    spacing:10
+    orientation:'vertical'
+    id:tex
+    file:file_location
+    output:output_file
+    status : sts
+    canvas.before:
+        Rectangle:
+            pos:self.pos
+            size:self.size
+            source:'happyshoping.jpeg'
+    Label:
+        font_size:40
+        text:""
+        size_hint:1,0.2
+    Label:
+        font_size:40
+        text:"[b]Image Text Extractor[/b]"
+        markup:True
+        size_hint:1,0.2
+    Label:
+        font_size:40
+        text:""
+        size_hint:1,0.2
+    BoxLayout:
+        FileChooserIconView:
+            id:file_location
+            size_hint:1.5,1
+            color: 0,0,0,0.6
+            
+    BoxLayout:
+        spacing:5
+        TextInput:
+            text:'ENTER OUTPUT FILE NAME'
+            size_hint:0.8,0.2
+            font_size:25
+            id:output_file
+
+        Button:
+            text:'convert'
+            size_hint:0.2,0.2
+            on_release:tex.runByThread()
+    Label:
+        text:''
+        font_size:25
+        id:sts
+        color: 0,0,0,0.6
+        size_hint:1,0.02
