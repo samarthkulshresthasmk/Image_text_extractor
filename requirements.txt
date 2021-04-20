@@ -1,0 +1,16 @@
+torch
+torchvision>=0.5
+opencv-python
+scipy
+numpy
+Pillow
+scikit-image
+python-bidi
+PyYAML
+Kivy @ file:///D:/bld/kivy_1608575423708/work
+kivy-deps.angle==0.3.0
+kivy-deps.glew==0.3.0
+kivy-deps.sdl2==0.3.1
+Kivy-Garden==0.1.4
+kivymd==0.104.1
+kiwisolver==1.2.0
